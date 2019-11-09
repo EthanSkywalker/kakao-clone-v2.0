@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <script src="https://kit.fontawesome.com/21a7709cb2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/styles.css" />
     <title>Chats | Kakao Clone</title>
   </head>
   <body>
@@ -22,7 +23,7 @@
     </div>
     <header class="header">
       <div class="header__header-colum">
-        <h1 class="hedaer__title">Chats</h1>
+        <h1 class="header__title">Chats</h1>
       </div>
       <div class="header__header-colum">
         <span class="header__icon">
@@ -40,20 +41,26 @@
       <ul class="chats__list">
         <li class="chats__chat chat">
           <a href="chat.html">
-            <div class="chat__column">
-              <img class="chat__avatar g-avatar" src="images/avatar.jpg" />
-              <div class="chat__content">
-                <span class="chat_username">
-                  Kim
-                </span>
-                <span class="chat_preview">
-                  Going home
-                </span>
+            <div class="chat__chat friend friend friend--lg">
+              <div class="friend__column">
+                <img src="images/avatar.jpg" class="m-avatar friend__avatar" />
+                <div class="friend__content">
+                  <span class="friend__name">
+                    Kim
+                  </span>
+                  <span class="friend__bottom-text">
+                    Going Home!
+                  </span>
+                </div>
               </div>
-            </div>
-            <div class="chat__column">
-              <span class="chat__timestemp">Yesterday</span>
-            </div>
+              <div class="friend__column">
+                <div class="friend__now-listening">
+                  <span class="chat__timestamp">
+                    March 8
+                  </span>
+                </div>
+              </div>
+            </li>
           </a>
         </li>
       </ul>
@@ -61,16 +68,19 @@
     <nav class="nav">
       <ul class="nav__list">
         <li class="nav__list-item">
-          <a href="friends.html" class="nav_list-link"><i class="far fa-user "></i></a>
+          <a href="friends.html" class="nav__list-link"><i class="far fa-user "></i></a>
         </li>
         <li class="nav__list-item">
-          <a href="index.html" class="nav_list-link"><i class="fas fa-comment "></i></a>
+          <a href="index.html" class="nav__list-link">
+            <div class="nav__badge">8</div>
+            <i class="fas fa-comment "></i>
+          </a>
         </li>
         <li class="nav__list-item">
-          <a href="find.html" class="nav_list-link"><i class="fas fa-search "></i></a>
+          <a href="find.html" class="nav__list-link"><i class="fas fa-search "></i></a>
         </li>
         <li class="nav__list-item">
-          <a href="more.html" class="nav_list-link"><i class="fas fa-ellipsis-h "></i></a>
+          <a href="more.html" class="nav__list-link"><i class="fas fa-ellipsis-h "></i></a>
         </li>
       </ul>
     </nav>
